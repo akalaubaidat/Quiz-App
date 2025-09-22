@@ -18,17 +18,15 @@ Players can enter their name, select a category, and answer multiple-choice ques
 - **JavaScript (Vanilla JS)**
   
 ##  Project Structure
-├── index.html # Main structure of the app
-├── style.css # Styling (responsive UI)
-├── script.js # Quiz logic
-└── README.md # Project documentation.
-
----
+1.index.html # Main structure of the app
+2.style.css # Styling (responsive UI)
+3.script.js # Quiz logic
+4.README.md # Project documentation.
 
 ## How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/quiz-app.git
+   git clone https://github.com/akalaubaidat/quiz-app.git
 
 ## How It Works
 1. The player enters their **name** and selects a **category**.  
