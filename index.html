@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz App</h1>
+        <div id="select-container">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="player-name" placeholder="name" required>
+            
+            <label for="category">Choose Category:</label>
+            <select id="category">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div id="quiz-section" style="display: none;">
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+            <div id="header">
+                <span id="username"></span>
+                <span id="timer">Time: 10</span>
+            </div>
+            <div class="quiz">
+                <h1 id="question">Question</h1>
+                <div id="answer-btn" class="btn-container"></div>
+            </div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+        <div class="result-screen" id="result-screen" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+    <div id="toast"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
