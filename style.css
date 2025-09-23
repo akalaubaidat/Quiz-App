@@ -99,32 +99,32 @@ body{
     display: none;
 
 }
-.answer {
-  background: #1B3C53;
-  color: white;
-  padding: 10px 20px;
-  margin: 8px;
-  border: 2px solid #1B3C53 !important;   
+.answer{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border: 2px solid #7A73D1; 
   border-radius: 6px;
-  font-size: 16px;
+  background-color: #fff;
   cursor: pointer;
-  transition: 0.3s;
-  -webkit-appearance: none; 
-  appearance: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .answer:hover:not(:disabled) {
-  background: #145277;
+  background-color: #7A73D1;
+  color: #fff;
+  border-color: #5c55a5;
 }
 
 .correct {
-  background: #4CAF50 !important;
+  background-color: #4CAF50 !important;
   color: #333;
   border: 2px solid #1B3C53 !important;
 }
 
 .incorrect {
-  background: #E53935 !important;
+  background-color: #E53935 !important;
   color: #333;
   border: 2px solid #1B3C53 !important;
 }
@@ -179,18 +179,16 @@ button:disabled {
     background-color: #28a745;
     transition: fadeIn 0.3s ease-in-out;
 }
-.fade-in{
-    animation: fadeIn 0.4s ease;
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
 }
+
 @keyframes fadeIn {
-    from{
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 footer{

@@ -112,7 +112,7 @@ const questions = {
             ]
         },
         {
-            question: "One of this is not a Flex Container Properties?",
+            question: "1One of this is not a Flex Container Properties?",
             answers: [
                 { text: "Flex direction", correct: false },
                 { text: "Flex location", correct: true },
@@ -192,7 +192,8 @@ function showQuestion() {
     resetState();
 
     let currentQuestion = shuffledQuestions[currentQuestionIndex];
-    questionEl.textContent = currentQuestion.question;
+    let questionNumber = currentQuestionIndex + 1; 
+    questionEl.textContent = `${questionNumber}. ${currentQuestion.question}`;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -236,6 +237,7 @@ function selectAnswer(e) {
     nextBtn.style.display = "block";
     clearInterval(timer);
 }
+
 
 nextBtn.addEventListener("click", () => {
     currentQuestionIndex++;
