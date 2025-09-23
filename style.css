@@ -32,6 +32,14 @@ body{
 #select-container{
     margin: 20px 0;
 }
+#player-name {
+  font-size: 16px;     /* prevent zoom on mobile */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
 #start-btn{
     display: block;
     width: 100%;
