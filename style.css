@@ -33,7 +33,7 @@ body{
     margin: 20px 0;
 }
 #start-btn{
-    display: block;
+    display: inline-block;
     width: 100%;
     margin-top: 10px;
     padding: 10px;
