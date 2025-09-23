@@ -250,7 +250,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 function startTimer() {
-    timeLeft = 5;
+    timeLeft = 1;
     timerEl.textContent = `Time: ${timeLeft}`;
     timer = setInterval(() => {
         timeLeft--;
@@ -306,8 +306,8 @@ function restartQuiz() {
     score = 0;
     currentQuestionIndex = 0;
     clearInterval(timer);
-    timeLeft = 5;
-    timerEl.textContent = "Time: 5";
+    timeLeft = 10;
+    timerEl.textContent = "Time: 10";
 }
 function showToast(message) {
     const toast = document.getElementById("toast");
