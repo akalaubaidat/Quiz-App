@@ -208,7 +208,7 @@ function showQuestion() {
     updateProgressBar();
 }
 
-// Reset state
+
 function resetState() {
     clearStatusClass(document.body);
     nextBtn.style.display = "none";
@@ -249,7 +249,6 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
-// Timer
 function startTimer() {
     timeLeft = 10;
     timerEl.textContent = `Time: ${timeLeft}`;
