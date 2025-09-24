@@ -250,7 +250,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 function startTimer() {
-    timeLeft = 1;
+    timeLeft = 5;
     timerEl.textContent = `Time: ${timeLeft}`;
     timer = setInterval(() => {
         timeLeft--;
@@ -306,14 +306,15 @@ function restartQuiz() {
     score = 0;
     currentQuestionIndex = 0;
     clearInterval(timer);
-    timeLeft = 10;
-    timerEl.textContent = "Time: 10";
+    timeLeft = 5;
+    timerEl.textContent = "Time: 5";
 }
 function showToast(message) {
     const toast = document.getElementById("toast");
     toast.textContent = message;
     toast.className = "show";
 
+    startTimer();
     setTimeout(() => {
         toast.className = toast.className.replace("show", "");
     }, 3000);
